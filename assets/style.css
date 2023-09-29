@@ -93,3 +93,53 @@ footer{
     justify-content: center;
     background-color: #8080808f;
 }
+
+/* Inicio modal */
+
+#header-modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: #00000053;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    width: 350px;
+
+    font-size: 12px;
+}
+
+#main-modal > form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+#main-modal > form > button {
+    align-self: center;
+}   
+
+fieldset {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    padding: 8px;
+    border: none
+}
+
+#input-date {
+    width: 169px;
+}
+
+#main-modal>form>button {
+    align-self: center;
+    margin-top: 40px;
+}
+
+/* Final modal */

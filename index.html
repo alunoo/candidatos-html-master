@@ -29,18 +29,20 @@
         </div>
 
         <div id="buttons">
-            <button onclick="beforePerfil()"><</button>
-            <button>+</button>
-            <button onclick="nextPerfil()">></button>
+            <button onclick="beforePerfil()">Anterior</button>
+            <button>Adicionar</button>
+            <button onclick="nextPerfil()">Próximo</button>
         </div>
     </section>
 
     <section id="modal">
-        <a>X</a>
-        
-        <div>
+
+        <div id="header-modal">
             <h2>Adicionar Novo Candidato</h2>
-            
+            <a>&#10060</a>
+        </div>
+        
+        <div id="main-modal">
             <form action="">
                 <fieldset>
                     <label for="link">link da Imagem</label>
@@ -54,23 +56,23 @@
                 
                 <fieldset>
                     <label for="text">Profissão:</label>
-                <input type="text">
-            </fieldset>
+                    <input type="text">
+                </fieldset>
             
-            <fieldset>
-                <label for="date">Nascimento:</label>
-                <input type="date"> 
-            </fieldset>
+                <fieldset>
+                    <label for="date">Nascimento:</label>
+                    <input type="date" id="input-date"> 
+                </fieldset>
             
-            <fieldset>
-                <label for="tel">Tel.:</label>
-                <input type="tel">
-            </fieldset>
+                <fieldset>
+                    <label for="tel">Tel.:</label>
+                    <input type="tel">
+                </fieldset>
             
-            <fieldset>
-                <label for="email">E-mail:</label>
-                <input type="email">
-            </fieldset>
+                <fieldset>
+                    <label for="email">E-mail:</label>
+                    <input type="email">
+                </fieldset>
             
             <button>Enviar</button>
             </form>
