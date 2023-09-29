@@ -30,7 +30,7 @@
 
         <div id="buttons">
             <button onclick="beforePerfil()">Anterior</button>
-            <button>Adicionar</button>
+            <button onclick="openModal()">Adicionar</button>
             <button onclick="nextPerfil()">Próximo</button>
         </div>
     </section>
@@ -39,13 +39,13 @@
 
         <div id="header-modal">
             <h2>Adicionar Novo Candidato</h2>
-            <a>&#10060</a>
+            <a onclick="closeModal()">&#10060</a>
         </div>
         
         <div id="main-modal">
             <form action="">
                 <fieldset>
-                    <label for="link">link da Imagem</label>
+                    <label for="link">Link da Imagem:</label>
                     <input type="link">
                 </fieldset>
                 
@@ -77,8 +77,10 @@
             <button>Enviar</button>
             </form>
         </div>
-            
     </section>
+
+    <div id="overFlow"></div>
+
 </main>
 
 <footer>
