@@ -35,6 +35,13 @@ const email = document.querySelector("#email");
 const modalNewCandidato = document.querySelector("#modal");
 const overFlow = document.querySelector("#overFlow");
 
+const inputImage = document.querySelector("#input-image");
+const inputName = document.querySelector("#input-name");
+const inputProfission = document.querySelector("#input-profission");
+const inputDate = document.querySelector("#input-date");
+const inputTel = document.querySelector("#input-tel");
+const inputEmail = document.querySelector("#input-email");
+
 let choice = 0
 
 function changePerfil(indice) {
@@ -73,4 +80,19 @@ function closeModal() {
 function openModal() {
     modalNewCandidato.style.display = "block";
     overFlow.style.display = "block";
+}
+
+function addNewCandidato () {
+    const newCandidato = {
+        image: inputImage.value,
+        name: inputName.value,
+        profession: inputProfission.value,
+        birth: inputDate.value,
+        phone: inputTel.value,
+        email: inputEmail.value
+    }
+
+candidatos.push(newCandidato); //Adiciona um novo objeto ao fim do array de candidato.
+
+closeModal()
 }

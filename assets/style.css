@@ -140,7 +140,7 @@ footer{
     padding-top: 40px;
 }
 
-#main-modal > form > button {
+#main-modal > form > a {
     align-self: center;
     margin-top: 40px;
 }   
